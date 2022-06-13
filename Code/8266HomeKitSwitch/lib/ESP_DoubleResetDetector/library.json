@@ -1,0 +1,37 @@
+{
+  "name": "ESP_DoubleResetDetector",
+  "version": "1.1.1",
+  "keywords": "rtc,eeprom,littlefs,spiffs,reset,data,esp32,esp8266,double-reset,detector",
+  "description": "Library to detect a double reset within a predetermined time, using RTC Memory, EEPROM, LittleFS or SPIFFS for ESP8266 and ESP32",
+  "authors":
+  {
+  "name":  "Khoi Hoang",
+  "url":   "https://github.com/khoih-prog",
+  "maintainer": true
+  },  
+  "repository":
+  {
+      "type": "git",
+      "url": "https://github.com/khoih-prog/ESP_DoubleResetDetector"
+  },
+  "homepage": "https://github.com/khoih-prog/ESP_DoubleResetDetector",
+  "export": {
+    "exclude": [
+      "linux",
+      "extras",
+      "tests"
+    ]
+  },
+  "dependencies":
+  [
+    {
+      "owner": "lorol",
+      "name": "LittleFS_esp32",
+      "version": "^1.0.5",
+      "platforms": ["espressif32"]
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": [ "espressif32", "espressif8266" ],
+  "examples": "examples/*/*/*.ino"
+}
